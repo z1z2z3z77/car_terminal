@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>617</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="menu_widget" name="page_menu"/>
+      <widget class="hare_widget" name="page_hardware"/>
+      <widget class="backupview" name="page_backupview"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>617</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>menu_widget</class>
+   <extends>QWidget</extends>
+   <header>menu_widget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>hare_widget</class>
+   <extends>QWidget</extends>
+   <header location="global">hare_widget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>backupview</class>
+   <extends>QWidget</extends>
+   <header>backupview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
